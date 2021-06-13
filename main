@@ -395,7 +395,6 @@ get_adapter_info(material_system, active_adapter, adapter_info)
 --//
 	if common_hwid == false then 
 			return
-		else
 			
 	end
 

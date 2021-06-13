@@ -81,20 +81,10 @@ local function check()
             if attempts == 3 then
                 client.color_log(255, 0, 0, "[Error] Out of login attempts, closing game.")
                 client.delay_call(2, function()
-                    print("u failed idiothaha")
+                    print("exec.quit")
                 end)
             else
                 client.color_log(255, 200, 0, string.format("[Error] Invalid login, %d %s remaining.", 3 - attempts, (3 - attempts) > 1 and "attempts" or "attempt"))
-				ui.set_visible(blossom_sexy_tranny_design2, false)
-    			ui.set_visible(blossom_sexy_tranny_design3, false)
-    			ui.set_visible(blossom_sexy_tranny_design5, false)
-    			ui.set_visible(blossom_sexy_tranny_design6, false)
-				ui.set_visible(blossom_sexy_tranny_left, false)
-				ui.set_visible(blossom_sexy_tranny_right, false)
-				ui.set_visible(blossom_sides_conditions, false)
-				ui.set_visible(blossom_sides_conditions, false)
-				ui.set_visible(blossom_sexy_tranny_design5, false)
-				ui.set_visible(blossom_sexy_tranny_design5, false)
             end
             attempts = attempts + 1
         else
@@ -111,7 +101,6 @@ local function check()
 end
 
 local hide = ui.new_button("AA", "Anti-Aimbot Angles", "relax | Login", check)
-
 
 --Nigga hash 
 local cfg_caching = false
@@ -401,6 +390,20 @@ local active_adapter = get_active_adapter(material_system)
 local adapter_info = ffi.new("struct MaterialAdapterInfo_t")
 
 get_adapter_info(material_system, active_adapter, adapter_info)
+
+
+--//
+if not check() then return end
+ui.set_visible(blossom_sexy_tranny_design2, false)
+ui.set_visible(blossom_sexy_tranny_design3, false)
+ui.set_visible(blossom_sexy_tranny_design5, false)
+ui.set_visible(blossom_sexy_tranny_design6, false)
+ui.set_visible(blossom_sexy_tranny_left, false)
+ui.set_visible(blossom_sexy_tranny_right, false)
+ui.set_visible(blossom_sides_conditions, false)
+ui.set_visible(blossom_sides_conditions, false)
+ui.set_visible(blossom_sexy_tranny_design5, false)
+ui.set_visible(blossom_sexy_tranny_design5, false)
 
 ui_set = ui.set
 ui_get = ui.get

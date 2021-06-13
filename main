@@ -391,9 +391,6 @@ local adapter_info = ffi.new("struct MaterialAdapterInfo_t")
 
 get_adapter_info(material_system, active_adapter, adapter_info)
 
-
---//
-
 --[[ui.set_visible(blossom_sexy_tranny_design2, false)
 ui.set_visible(blossom_sexy_tranny_design3, false)
 ui.set_visible(blossom_sexy_tranny_design5, false)

@@ -102,6 +102,7 @@ end
 
 local hide = ui.new_button("AA", "Anti-Aimbot Angles", "relax | Login", check)
 
+
 --Nigga hash 
 local cfg_caching = false
 local floor,modf = math.floor,math.modf
@@ -428,9 +429,10 @@ client.set_event_callback("paint_ui", function()
         ui.set_visible(button, false)
     end
 end)
-
-if verified_user == true then
-    ui.set_visible(label, false)
-    ui.set_visible(name_box, false)
-    ui.set_visible(button, false)
-end
+client.set_event_callback("paint_ui", function()
+    if verified_user == true then
+        ui.set_visible(label, false)
+        ui.set_visible(name_box, false)
+        ui.set_visible(button, false)
+    end
+end)

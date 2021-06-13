@@ -393,10 +393,11 @@ get_adapter_info(material_system, active_adapter, adapter_info)
 
 
 --//
-if not common_hwid == true then return end
-
-if common_hwid == true then
-
+if not common_hwid == true then
+	return
+else
+	
+end
 
 --[[ui.set_visible(blossom_sexy_tranny_design2, false)
 ui.set_visible(blossom_sexy_tranny_design3, false)
@@ -1040,5 +1041,3 @@ local function indicator()
 
 end
 client.set_event_callback("paint", indicator)
-
-end

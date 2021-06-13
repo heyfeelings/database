@@ -393,8 +393,9 @@ get_adapter_info(material_system, active_adapter, adapter_info)
 
 
 --//
-if not check() then return end
-ui.set_visible(blossom_sexy_tranny_design2, false)
+if not common_hwid == true then return end
+
+--[[ui.set_visible(blossom_sexy_tranny_design2, false)
 ui.set_visible(blossom_sexy_tranny_design3, false)
 ui.set_visible(blossom_sexy_tranny_design5, false)
 ui.set_visible(blossom_sexy_tranny_design6, false)
@@ -403,7 +404,7 @@ ui.set_visible(blossom_sexy_tranny_right, false)
 ui.set_visible(blossom_sides_conditions, false)
 ui.set_visible(blossom_sides_conditions, false)
 ui.set_visible(blossom_sexy_tranny_design5, false)
-ui.set_visible(blossom_sexy_tranny_design5, false)
+ui.set_visible(blossom_sexy_tranny_design5, false)]]--
 
 ui_set = ui.set
 ui_get = ui.get

@@ -393,30 +393,8 @@ get_adapter_info(material_system, active_adapter, adapter_info)
 
 
 --//
-if common_hwid == false then
-	ui.set_visible(aa_state, true)
-	ui.set_visible(aa_pitch, true)
-	ui.set_visible(aa_yaw, true)
-	ui.set_visible(aa_yaw_offset, true)
-	ui.set_visible(aa_yaw_jitter, true)
-	ui.set_visible(aa_yaw_jitter_offset, true)
-	ui.set_visible(aa_yaw_base, true)
-	ui.set_visible(aa_fake_yaw, true)
-	ui.set_visible(aa_fake_yaw_slider, true)
-	ui.set_visible(aa_fs_byaw, true)
-	ui.set_visible(aa_body_limit, true)
-	ui.set_visible(aa_fake_walk, true)
-	ui.set_visible(fake_walk, true)
-	ui.set_visible(misc_doubletap, true)
-	ui.set_visible(doubletap, true)
-	ui.set_visible(misc_onshot, true)
-	ui.set_visible(misc_onshot_aa, true)
-	ui.set_visible(aa_edge, true)
-	ui.set_visible(aa_fs_triggers, true)
-	ui.set_visible(aa_bind_fs, true)
-	ui.set_visible(misc_fakeduck, true)
-	return true
-end
+if not verified_user == true then return end
+
 
 --[[ui.set_visible(blossom_sexy_tranny_design2, false)
 ui.set_visible(blossom_sexy_tranny_design3, false)

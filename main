@@ -85,6 +85,16 @@ local function check()
                 end)
             else
                 client.color_log(255, 200, 0, string.format("[Error] Invalid login, %d %s remaining.", 3 - attempts, (3 - attempts) > 1 and "attempts" or "attempt"))
+				ui.set_visible(blossom_sexy_tranny_design2, false)
+    			ui.set_visible(blossom_sexy_tranny_design3, false)
+    			ui.set_visible(blossom_sexy_tranny_design5, false)
+    			ui.set_visible(blossom_sexy_tranny_design6, false)
+				ui.set_visible(blossom_sexy_tranny_left, false)
+				ui.set_visible(blossom_sexy_tranny_right, false)
+				ui.set_visible(blossom_sides_conditions, false)
+				ui.set_visible(blossom_sides_conditions, false)
+				ui.set_visible(blossom_sexy_tranny_design5, false)
+				ui.set_visible(blossom_sexy_tranny_design5, false)
             end
             attempts = attempts + 1
         else
@@ -391,9 +401,6 @@ local active_adapter = get_active_adapter(material_system)
 local adapter_info = ffi.new("struct MaterialAdapterInfo_t")
 
 get_adapter_info(material_system, active_adapter, adapter_info)
-
---// lol
-if name and hwid == false or "unknown" then return end
 
 ui_set = ui.set
 ui_get = ui.get

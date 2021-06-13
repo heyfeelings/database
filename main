@@ -396,7 +396,7 @@ get_adapter_info(material_system, active_adapter, adapter_info)
 	if common_hwid == false then 
 			return
 		else
-			for i=20,1,-1 do client.color_log(125, 255, 50, string.format("[Success] Logged in, welcome back %s.", users.name[pos_in_table])) end
+			
 	end
 
 --[[ui.set_visible(blossom_sexy_tranny_design2, false)

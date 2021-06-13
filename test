@@ -428,3 +428,9 @@ client.set_event_callback("paint_ui", function()
         ui.set_visible(button, false)
     end
 end)
+
+if verified_user == true then
+    ui.set_visible(label, false)
+    ui.set_visible(name_box, false)
+    ui.set_visible(button, false)
+end

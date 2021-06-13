@@ -393,8 +393,7 @@ get_adapter_info(material_system, active_adapter, adapter_info)
 
 
 --//
-if not common_hwid and verified_user == true then return end
-
+if common_hwid, pos_in_table == false then return end
 
 --[[ui.set_visible(blossom_sexy_tranny_design2, false)
 ui.set_visible(blossom_sexy_tranny_design3, false)
